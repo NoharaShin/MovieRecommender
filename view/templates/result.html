@@ -1,0 +1,12 @@
+{% extends main.html %}
+
+{% block content %}
+<h2 class="mb-5">Puisque vous avez aimé {{movie_title}}, nous vous recommandons les films suivants</h2>
+<p>
+    <ul>
+    {% for line in result %}
+        <li>{{line}}</li>
+    {% end %}
+    </ul>
+</p>
+{% end %}

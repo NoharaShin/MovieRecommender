@@ -1,0 +1,18 @@
+api:
+  port: 9999
+  content_type: 'application/json'
+  allowed_origin: '*'
+  authorization_header: 'Authorization'
+  allowed_headers:
+    - 'Authorization'
+    - 'X-Requested-With'
+    - 'X-Access-Token'
+    - 'X-Service-Token'
+    - 'Content-Type'
+  allowed_method:
+    - 'GET'
+    - 'POST'
+    - 'PUT'
+    - 'PATCH'
+    - 'DELETE'
+    - 'OPTIONS'
